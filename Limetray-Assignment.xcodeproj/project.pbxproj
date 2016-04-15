@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5DCE84F1CC183600056C427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE84E1CC183600056C427 /* AppDelegate.swift */; };
+		D5DCE8521CC183600056C427 /* Limetray_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8501CC183600056C427 /* Limetray_Assignment.xcdatamodeld */; };
+		D5DCE8541CC183600056C427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8531CC183600056C427 /* ViewController.swift */; };
+		D5DCE8571CC183600056C427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DCE8551CC183600056C427 /* Main.storyboard */; };
+		D5DCE8591CC183600056C427 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DCE8581CC183600056C427 /* Images.xcassets */; };
+		D5DCE85C1CC183600056C427 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DCE85A1CC183600056C427 /* LaunchScreen.xib */; };
+		D5DCE8681CC183600056C427 /* Limetray_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8671CC183600056C427 /* Limetray_AssignmentTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5DCE8621CC183600056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8411CC183600056C427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5DCE8481CC183600056C427;
+			remoteInfo = "Limetray-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5DCE8491CC183600056C427 /* Limetray-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Limetray-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DCE84D1CC183600056C427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DCE84E1CC183600056C427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5DCE8511CC183600056C427 /* Limetray_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Limetray_Assignment.xcdatamodel; sourceTree = "<group>"; };
+		D5DCE8531CC183600056C427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5DCE8561CC183600056C427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5DCE8581CC183600056C427 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5DCE85B1CC183600056C427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D5DCE8611CC183600056C427 /* Limetray-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Limetray-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DCE8661CC183600056C427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DCE8671CC183600056C427 /* Limetray_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limetray_AssignmentTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5DCE8461CC183600056C427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DCE85E1CC183600056C427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5DCE8401CC183600056C427 = {
+			isa = PBXGroup;
+			children = (
+				D5DCE84B1CC183600056C427 /* Limetray-Assignment */,
+				D5DCE8641CC183600056C427 /* Limetray-AssignmentTests */,
+				D5DCE84A1CC183600056C427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5DCE84A1CC183600056C427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE8491CC183600056C427 /* Limetray-Assignment.app */,
+				D5DCE8611CC183600056C427 /* Limetray-AssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5DCE84B1CC183600056C427 /* Limetray-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE84E1CC183600056C427 /* AppDelegate.swift */,
+				D5DCE8531CC183600056C427 /* ViewController.swift */,
+				D5DCE8551CC183600056C427 /* Main.storyboard */,
+				D5DCE8581CC183600056C427 /* Images.xcassets */,
+				D5DCE85A1CC183600056C427 /* LaunchScreen.xib */,
+				D5DCE8501CC183600056C427 /* Limetray_Assignment.xcdatamodeld */,
+				D5DCE84C1CC183600056C427 /* Supporting Files */,
+			);
+			path = "Limetray-Assignment";
+			sourceTree = "<group>";
+		};
+		D5DCE84C1CC183600056C427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE84D1CC183600056C427 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5DCE8641CC183600056C427 /* Limetray-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE8671CC183600056C427 /* Limetray_AssignmentTests.swift */,
+				D5DCE8651CC183600056C427 /* Supporting Files */,
+			);
+			path = "Limetray-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		D5DCE8651CC183600056C427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE8661CC183600056C427 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5DCE8481CC183600056C427 /* Limetray-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DCE86B1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-Assignment" */;
+			buildPhases = (
+				D5DCE8451CC183600056C427 /* Sources */,
+				D5DCE8461CC183600056C427 /* Frameworks */,
+				D5DCE8471CC183600056C427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Limetray-Assignment";
+			productName = "Limetray-Assignment";
+			productReference = D5DCE8491CC183600056C427 /* Limetray-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5DCE8601CC183600056C427 /* Limetray-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DCE86E1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-AssignmentTests" */;
+			buildPhases = (
+				D5DCE85D1CC183600056C427 /* Sources */,
+				D5DCE85E1CC183600056C427 /* Frameworks */,
+				D5DCE85F1CC183600056C427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5DCE8631CC183600056C427 /* PBXTargetDependency */,
+			);
+			name = "Limetray-AssignmentTests";
+			productName = "Limetray-AssignmentTests";
+			productReference = D5DCE8611CC183600056C427 /* Limetray-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5DCE8411CC183600056C427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Prabal Malhan";
+				TargetAttributes = {
+					D5DCE8481CC183600056C427 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D5DCE8601CC183600056C427 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D5DCE8481CC183600056C427;
+					};
+				};
+			};
+			buildConfigurationList = D5DCE8441CC183600056C427 /* Build configuration list for PBXProject "Limetray-Assignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5DCE8401CC183600056C427;
+			productRefGroup = D5DCE84A1CC183600056C427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5DCE8481CC183600056C427 /* Limetray-Assignment */,
+				D5DCE8601CC183600056C427 /* Limetray-AssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5DCE8471CC183600056C427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DCE8571CC183600056C427 /* Main.storyboard in Resources */,
+				D5DCE85C1CC183600056C427 /* LaunchScreen.xib in Resources */,
+				D5DCE8591CC183600056C427 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DCE85F1CC183600056C427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5DCE8451CC183600056C427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DCE8541CC183600056C427 /* ViewController.swift in Sources */,
+				D5DCE8521CC183600056C427 /* Limetray_Assignment.xcdatamodeld in Sources */,
+				D5DCE84F1CC183600056C427 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DCE85D1CC183600056C427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DCE8681CC183600056C427 /* Limetray_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5DCE8631CC183600056C427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5DCE8481CC183600056C427 /* Limetray-Assignment */;
+			targetProxy = D5DCE8621CC183600056C427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5DCE8551CC183600056C427 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5DCE8561CC183600056C427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5DCE85A1CC183600056C427 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5DCE85B1CC183600056C427 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5DCE8691CC183600056C427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5DCE86A1CC183600056C427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5DCE86C1CC183600056C427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Limetray-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D5DCE86D1CC183600056C427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Limetray-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D5DCE86F1CC183600056C427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Limetray-AssignmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Limetray-Assignment.app/Limetray-Assignment";
+			};
+			name = Debug;
+		};
+		D5DCE8701CC183600056C427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Limetray-AssignmentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Limetray-Assignment.app/Limetray-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5DCE8441CC183600056C427 /* Build configuration list for PBXProject "Limetray-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DCE8691CC183600056C427 /* Debug */,
+				D5DCE86A1CC183600056C427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DCE86B1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DCE86C1CC183600056C427 /* Debug */,
+				D5DCE86D1CC183600056C427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5DCE86E1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DCE86F1CC183600056C427 /* Debug */,
+				D5DCE8701CC183600056C427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5DCE8501CC183600056C427 /* Limetray_Assignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5DCE8511CC183600056C427 /* Limetray_Assignment.xcdatamodel */,
+			);
+			currentVersion = D5DCE8511CC183600056C427 /* Limetray_Assignment.xcdatamodel */;
+			path = Limetray_Assignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5DCE8411CC183600056C427 /* Project object */;
+}
