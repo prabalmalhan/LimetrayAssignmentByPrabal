@@ -6,7 +6,7 @@ BAD STUFF{Murphy's Law}
 
 
 
-Build using Swift 1.2 and Xcode 6.4 (had Xcode 7 beta and tried to download Xcode 7.3 with MTNL Net but failed everytime)
+Build using Swift 1.2 and Xcode 6.4 (tried to download Xcode 7.3 with MTNL Net but failed everytime)
 
 FEATURES 
 
