@@ -29,6 +29,10 @@ class ChartsViewController: UIViewController {
 
         
     }
+    override func viewDidAppear(animated: Bool) {
+        dataLoad()
+        setChart(dates, values: numberOfTweets)
+    }
     func dataLoad(){
         var fetchRequest = NSFetchRequest(entityName: "LimeTrayTweets")
         

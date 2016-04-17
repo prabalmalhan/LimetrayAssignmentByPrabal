@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CB760CD3-D07C-4FD3-AA93-540BCC9025CE</string>
+	<string>A68BAFA9-259D-4142-9424-E82125713085</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Limetray-Assignment</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/prabalmalhan/LimetrayAssignmentByPrabal.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Limetray-Assignment.xcworkspace</string>
+	<string>Limetray-Assignment.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6EF1CA1940D5166B044D9B02230640E56759BF04</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/prabalmalhan/LimetrayAssignmentByPrabal.git</string>
