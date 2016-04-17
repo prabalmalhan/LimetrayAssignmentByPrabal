@@ -12,13 +12,13 @@ import CoreData
 
 var lastSinceId = ""
 var check = true
-class tweet: UITableViewController,TwitterFollowerDelegate {
+class tweet: UITableViewController,TweetsDelegate {
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     var serviceWrapper: TwitterServiceWrapper = TwitterServiceWrapper()
     var heightDictionaryForTweet = [Int:CGFloat]()
-    var tweetsFromCoreData = [TwitterFollower]()
+    var tweetsFromCoreData = [Tweets]()
     
     //MARK: LifeCycle Methods
     
@@ -38,7 +38,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TweetCell
-        let tweet = tweetsFromCoreData[indexPath.row] as TwitterFollower
+        let tweet = tweetsFromCoreData[indexPath.row] as Tweets
        
         cell.tweet_text.text = tweet.tweet
         cell.tweetDate.text = tweet.created_at
@@ -75,7 +75,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
             for results in fetchResults{
                 let alreadyFound = tweetsFromCoreData.filter( { return $0.id == results.id })
                 if alreadyFound.count == 0 {
-                    tweetsFromCoreData.append(TwitterFollower(text: results.text, date: results.date, id: results.id))
+                    tweetsFromCoreData.append(Tweets(text: results.text, date: results.date, id: results.id))
                 }
                 
                 lastSinceId = "\(fetchResults[0].id.toInt()!+1)"
@@ -100,9 +100,9 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
     }
     // MARK: - TwitterFollowerDelegate methods
     
-    func finishedDownloading(follower: TwitterFollower) {
+    func finishedDownloading(tweetu: Tweets) {
      dispatch_async(dispatch_get_main_queue(), { () -> Void in   
-            self.createTask(follower)
+            self.createTask(tweetu)
             self.tableView.reloadData()
             self.reloadData()
 ////            self.activityIndicator.stopAnimating()
@@ -111,7 +111,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
         
     }
 //MARK:- CoreData Save Entity
-    func createTask(tweetData:TwitterFollower) {
+    func createTask(tweetData:Tweets) {
        
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("LimeTrayTweets", inManagedObjectContext: self.managedObjectContext!) as! LimeTrayTweets
                     newItem.id = tweetData.id!

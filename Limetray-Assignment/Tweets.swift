@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TwitterFollower {
+struct Tweets {
     var tweet: String?
     var created_at: String?
     var id: String?

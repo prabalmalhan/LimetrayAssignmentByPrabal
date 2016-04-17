@@ -33,7 +33,7 @@ class ChartsViewController: UIViewController {
     var dates: [String]!
     var onlyDates = [String]()
     var numberOfTweets = [Double]()
-    var tweetsFromCoreData = [TwitterFollower]()
+    var tweetsFromCoreData = [Tweets]()
 
 //MARK : LifeCycle Methods
     override func viewDidLoad() {
@@ -69,7 +69,7 @@ class ChartsViewController: UIViewController {
                 for results in fetchResults{
                     let alreadyFound = tweetsFromCoreData.filter( { return $0.id == results.id })
                     if alreadyFound.count == 0 {
-                        tweetsFromCoreData.append(TwitterFollower(text: results.text, date: results.date, id: results.id))
+                        tweetsFromCoreData.append(Tweets(text: results.text, date: results.date, id: results.id))
                         onlyDates.append(results.date)
                     }
                 }

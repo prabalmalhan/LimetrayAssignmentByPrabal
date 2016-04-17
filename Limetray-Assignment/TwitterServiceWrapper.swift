@@ -9,13 +9,13 @@
 import Foundation
 
 
-protocol TwitterFollowerDelegate{
-    func finishedDownloading(follower:TwitterFollower)
+protocol TweetsDelegate{
+    func finishedDownloading(follower:Tweets)
 }
 
 
 public class TwitterServiceWrapper:NSObject {
-    var delegate:TwitterFollowerDelegate?
+    var delegate:TweetsDelegate?
     
     let consumerKey = "Bar7t02CdVcbvOmY0lTf4uWNk"
     let consumerSecret = "hN5Gukkaq0PQbMLooIo4A47tpMdsGGHRsePoX4EjoPlUjK4ntd"
@@ -117,8 +117,8 @@ public class TwitterServiceWrapper:NSObject {
                             if let id  = status["id_str"] as? String{
                                 
                                 var shortDate = (date as NSString).substringWithRange(NSMakeRange(8, 2))
-                                let follower = TwitterFollower(text: tweet,date:shortDate,id:id)
-                                self.delegate?.finishedDownloading(follower)
+                                let tweet = Tweets(text: tweet,date:shortDate,id:id)
+                                self.delegate?.finishedDownloading(tweet)
                             }
                         }
                     }
