@@ -56,15 +56,7 @@ class ChartsViewController: UIViewController {
                 
                 let results = onlyDates.filter { el in el == self.dates[i] }
                 
-//                    var numberOfOccurenses = onlyDates
-//                                        .filter(
-//                                            {
-//                                                    if $0 == self.dates[i]  {
-//                                                        return true
-//                                                    }else{
-//                                                        return false
-//                                                }
-//                    }).count
+
                 numberOfTweets.insert(Double(results.count), atIndex: i)
             }
             println("numberOf Tweets \(numberOfTweets)")

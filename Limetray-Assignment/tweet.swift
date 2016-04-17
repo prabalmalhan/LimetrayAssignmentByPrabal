@@ -11,12 +11,14 @@ import CoreData
 
 
 var lastSinceId = ""
+var check = true
 class tweet: UITableViewController,TwitterFollowerDelegate {
 
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     var serviceWrapper: TwitterServiceWrapper = TwitterServiceWrapper()
+    var heightDictionaryForTweet = [Int:CGFloat]()
 //    var tweets = [TwitterFollower]()
     var tweetsFromCoreData = [TwitterFollower]()
     override func viewDidLoad() {
@@ -30,14 +32,23 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TweetCell
         let tweet = tweetsFromCoreData[indexPath.row] as TwitterFollower
-                cell.tweet_text.text = tweet.tweet
-        return cell
-    }
+       
+        cell.tweet_text.text = tweet.tweet
+        cell.tweetDate.text = tweet.created_at
+        cell.tweet_text.sizeToFit()
+        heightDictionaryForTweet[indexPath.row] = cell.tweet_text.frame.height + 30
+            return cell
+        }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweetsFromCoreData.count
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        if let height = heightDictionaryForTweet[indexPath.row]{
+            if height > 70{
+                return height
+            }
+        }
+        return 70
     }
     
    func reloadData(){
@@ -60,26 +71,25 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
                 }
                 println("Fetch Results  ")
                 println(results.date + results.id)
+             
+                
+                lastSinceId = "\(fetchResults[0].id.toInt()!+1)"
+                
+                
             }
-            lastSinceId = fetchResults[0].id
-            serviceWrapper.getResponseForRequest("https://api.twitter.com/1.1/search/tweets.json?&since_id=\(lastSinceId)f=tweets&vertical=default&q=%22limetray%22&count=800&src=typd")
+      
+            if (check){
+                serviceWrapper.getResponseForRequest("https://api.twitter.com/1.1/search/tweets.json?&since_id=\(lastSinceId)f=tweets&vertical=default&q=%22limetray%22&count=800&src=typd")
+                check = false
+            }
+            tweetsFromCoreData.sort({ $0.id > $1.id })
             self.tableView.reloadData()
         }
         else{
             serviceWrapper.getResponseForRequest("https://api.twitter.com/1.1/search/tweets.json?f=tweets&vertical=default&q=%22limetray%22&count=800&src=typd")
+            check = false
             
-            
-//            let seconds = 5.0
-//            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-//            let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-//            
-//            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-//                
-//                // here code perfomed with delay
-//                println("after 10 sec")
-//                self.serviceWrapper.getResponseForRequest("https://api.twitter.com/1.1/search/tweets.json?&max_id=718678414312534015f=tweets&vertical=default&q=%22limetray%22&count=200&src=typd")
-//                
-//            })
+ 
             
         }
         

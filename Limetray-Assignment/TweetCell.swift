@@ -13,4 +13,5 @@ class TweetCell: UITableViewCell {
     
     @IBOutlet weak var tweet_text: UILabel!
 
+    @IBOutlet weak var tweetDate: UILabel!
 }
