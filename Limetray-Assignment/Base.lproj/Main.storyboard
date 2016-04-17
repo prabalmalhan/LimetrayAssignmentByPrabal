@@ -1,25 +1,159 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QDe-P5-WNF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Graph-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChartsViewController" customModule="Limetray_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-0W-3hV" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="0.0" width="568" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fe9-0W-3hV" secondAttribute="trailing" id="GCS-zi-VNf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Fe9-0W-3hV" secondAttribute="bottom" constant="50" id="hZO-yP-xVp"/>
+                            <constraint firstItem="Fe9-0W-3hV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="i8j-bj-ZTy"/>
+                            <constraint firstItem="Fe9-0W-3hV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tyD-aE-K7z"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Graph" id="VgV-uu-PCJ"/>
+                    <connections>
+                        <outlet property="barChart" destination="Fe9-0W-3hV" id="FHQ-NP-6Cn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1082" y="377"/>
+        </scene>
+        <!--Limetray-->
+        <scene sceneID="nA7-Ry-9Ls">
+            <objects>
+                <tableViewController id="EzL-Qc-81B" customClass="tweet" customModule="Limetray_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="22" sectionFooterHeight="22" id="D8N-Rg-HsO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="59" id="6TX-HY-L7d" customClass="TweetCell" customModule="Limetray_Assignment" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6TX-HY-L7d" id="hSm-wg-YE1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-0c-gXz">
+                                            <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vwW-0c-gXz" firstAttribute="top" secondItem="hSm-wg-YE1" secondAttribute="top" constant="8" id="0cD-jb-bcX"/>
+                                        <constraint firstAttribute="trailing" secondItem="vwW-0c-gXz" secondAttribute="trailing" constant="8" id="BDT-V5-th2"/>
+                                        <constraint firstItem="vwW-0c-gXz" firstAttribute="leading" secondItem="hSm-wg-YE1" secondAttribute="leading" constant="8" id="QqD-x1-03L"/>
+                                        <constraint firstAttribute="bottom" secondItem="vwW-0c-gXz" secondAttribute="bottom" constant="8" id="eQO-lG-I5Y"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tweet_text" destination="vwW-0c-gXz" id="47U-SP-hns"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EzL-Qc-81B" id="c2l-k5-bhb"/>
+                            <outlet property="delegate" destination="EzL-Qc-81B" id="wd2-9h-e0y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Limetray" id="JkK-tx-V9g"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVR-WE-OnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3438" y="247"/>
+        </scene>
+        <!--Latest Tweets-->
+        <scene sceneID="bcJ-aW-AOu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e1L-9i-ine" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Latest Tweets" image="twitter" id="HbI-ny-wea"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hB-C4-IWO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.33748849635194328" green="0.8306699810303031" blue="0.17142849899225626" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EzL-Qc-81B" kind="relationship" relationship="rootViewController" id="Ptv-Od-VHN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtM-NP-DUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="247"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VZL-oS-dHk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QDe-P5-WNF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RH7-eO-Ggy">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e1L-9i-ine" kind="relationship" relationship="viewControllers" id="yDf-Dp-Wad"/>
+                        <segue destination="rLg-2Z-y2x" kind="relationship" relationship="viewControllers" id="pub-bZ-aqP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQW-gg-7Z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="247"/>
+        </scene>
+        <!--Graph-->
+        <scene sceneID="Boh-UN-6mB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rLg-2Z-y2x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Graph" image="graph" id="DGr-PA-yBE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iMu-4M-Or1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3374884964" green="0.830669981" blue="0.17142849900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bwl-0F-cUh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlh-QJ-zz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="491"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="graph" width="32" height="32"/>
+        <image name="twitter" width="32" height="32"/>
+    </resources>
 </document>

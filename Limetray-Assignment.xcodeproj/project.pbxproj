@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96790975F981D28A875B0AC2 /* Pods_Limetray_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC4D9C2158A586F980FC397 /* Pods_Limetray_Assignment.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D5DCE84F1CC183600056C427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE84E1CC183600056C427 /* AppDelegate.swift */; };
 		D5DCE8521CC183600056C427 /* Limetray_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8501CC183600056C427 /* Limetray_Assignment.xcdatamodeld */; };
 		D5DCE8541CC183600056C427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8531CC183600056C427 /* ViewController.swift */; };
@@ -14,6 +15,18 @@
 		D5DCE8591CC183600056C427 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DCE8581CC183600056C427 /* Images.xcassets */; };
 		D5DCE85C1CC183600056C427 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DCE85A1CC183600056C427 /* LaunchScreen.xib */; };
 		D5DCE8681CC183600056C427 /* Limetray_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DCE8671CC183600056C427 /* Limetray_AssignmentTests.swift */; };
+		D5DCE8981CC184F30056C427 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DCE8911CC184E80056C427 /* SwifteriOS.framework */; };
+		D5DCE89F1CC185880056C427 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DCE8911CC184E80056C427 /* SwifteriOS.framework */; };
+		D5DCE8A01CC185880056C427 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5DCE8911CC184E80056C427 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5E6AFBA1CC2B2BA006FDCD0 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6AFB91CC2B2BA006FDCD0 /* TweetCell.swift */; };
+		D5E6AFD01CC2BC22006FDCD0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E6AFCF1CC2BC15006FDCD0 /* Charts.framework */; };
+		D5E6AFD11CC2BC22006FDCD0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5E6AFCF1CC2BC15006FDCD0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5E6AFD51CC2BEE4006FDCD0 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6AFD41CC2BEE4006FDCD0 /* ChartsViewController.swift */; };
+		D5E7E10C1CC2D6B500849802 /* LimeTrayTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E7E10B1CC2D6B500849802 /* LimeTrayTweets.swift */; };
+		D5E7E10D1CC2D6B500849802 /* LimeTrayTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E7E10B1CC2D6B500849802 /* LimeTrayTweets.swift */; };
+		D5EEBFA71CC232D500545D94 /* TwitterServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EEBFA61CC232D500545D94 /* TwitterServiceWrapper.swift */; };
+		D5EEBFAD1CC232E000545D94 /* TwitterFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EEBFAC1CC232E000545D94 /* TwitterFollower.swift */; };
+		D5EEBFAF1CC2334D00545D94 /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EEBFAE1CC2334D00545D94 /* tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +37,83 @@
 			remoteGlobalIDString = D5DCE8481CC183600056C427;
 			remoteInfo = "Limetray-Assignment";
 		};
+		D5DCE88E1CC184E80056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		D5DCE8901CC184E80056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		D5DCE8921CC184E80056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		D5DCE8941CC184E80056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		D5DCE8961CC184E80056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C5A1944AECB00993175;
+			remoteInfo = SwifterDemoMacTests;
+		};
+		D5DCE8A11CC185880056C427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		D5E6AFCE1CC2BC15006FDCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5E6AFCA1CC2BC15006FDCD0 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		D5E6AFD21CC2BC22006FDCD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5E6AFCA1CC2BC15006FDCD0 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D5DCE8A31CC185890056C427 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5DCE8A01CC185880056C427 /* SwifteriOS.framework in Embed Frameworks */,
+				D5E6AFD11CC2BC22006FDCD0 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		289A4C4BFA91B4DC2103AED3 /* Pods-Limetray-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limetray-Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Limetray-Assignment/Pods-Limetray-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC4D9C2158A586F980FC397 /* Pods_Limetray_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Limetray_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582C47927B4138AD8044480F /* Pods-Limetray-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Limetray-Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Limetray-Assignment/Pods-Limetray-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		D5DCE8491CC183600056C427 /* Limetray-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Limetray-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DCE84D1CC183600056C427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DCE84E1CC183600056C427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +125,15 @@
 		D5DCE8611CC183600056C427 /* Limetray-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Limetray-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DCE8661CC183600056C427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DCE8671CC183600056C427 /* Limetray_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limetray_AssignmentTests.swift; sourceTree = "<group>"; };
+		D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../Downloads/Swifter-xcode-6.3/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		D5E6AFB91CC2B2BA006FDCD0 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		D5E6AFC11CC2B9CF006FDCD0 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Downloads/Charts-2.1.2/Charts/build/Debug-iphoneos/Charts.framework"; sourceTree = "<group>"; };
+		D5E6AFCA1CC2BC15006FDCD0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-2.1-2.2/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		D5E6AFD41CC2BEE4006FDCD0 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		D5E7E10B1CC2D6B500849802 /* LimeTrayTweets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimeTrayTweets.swift; sourceTree = "<group>"; };
+		D5EEBFA61CC232D500545D94 /* TwitterServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterServiceWrapper.swift; sourceTree = "<group>"; };
+		D5EEBFAC1CC232E000545D94 /* TwitterFollower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFollower.swift; sourceTree = "<group>"; };
+		D5EEBFAE1CC2334D00545D94 /* tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +141,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DCE8981CC184F30056C427 /* SwifteriOS.framework in Frameworks */,
+				D5E6AFD01CC2BC22006FDCD0 /* Charts.framework in Frameworks */,
+				D5DCE89F1CC185880056C427 /* SwifteriOS.framework in Frameworks */,
+				96790975F981D28A875B0AC2 /* Pods_Limetray_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +158,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C0F9377716B31046F53B8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				289A4C4BFA91B4DC2103AED3 /* Pods-Limetray-Assignment.debug.xcconfig */,
+				582C47927B4138AD8044480F /* Pods-Limetray-Assignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40CCDFAE940993203D7ACF06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5E6AFC11CC2B9CF006FDCD0 /* Charts.framework */,
+				4DC4D9C2158A586F980FC397 /* Pods_Limetray_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5DCE8401CC183600056C427 = {
 			isa = PBXGroup;
 			children = (
 				D5DCE84B1CC183600056C427 /* Limetray-Assignment */,
 				D5DCE8641CC183600056C427 /* Limetray-AssignmentTests */,
 				D5DCE84A1CC183600056C427 /* Products */,
+				04C0F9377716B31046F53B8B /* Pods */,
+				40CCDFAE940993203D7ACF06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +199,17 @@
 		D5DCE84B1CC183600056C427 /* Limetray-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				D5E7E10B1CC2D6B500849802 /* LimeTrayTweets.swift */,
+				D5E6AFCA1CC2BC15006FDCD0 /* Charts.xcodeproj */,
+				D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */,
 				D5DCE84E1CC183600056C427 /* AppDelegate.swift */,
 				D5DCE8531CC183600056C427 /* ViewController.swift */,
+				D5EEBFAE1CC2334D00545D94 /* tweet.swift */,
 				D5DCE8551CC183600056C427 /* Main.storyboard */,
+				D5E6AFD41CC2BEE4006FDCD0 /* ChartsViewController.swift */,
+				D5E6AFB91CC2B2BA006FDCD0 /* TweetCell.swift */,
+				D5EEBFAC1CC232E000545D94 /* TwitterFollower.swift */,
+				D5EEBFA61CC232D500545D94 /* TwitterServiceWrapper.swift */,
 				D5DCE8581CC183600056C427 /* Images.xcassets */,
 				D5DCE85A1CC183600056C427 /* LaunchScreen.xib */,
 				D5DCE8501CC183600056C427 /* Limetray_Assignment.xcdatamodeld */,
@@ -115,6 +243,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D5DCE8871CC184E80056C427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DCE88F1CC184E80056C427 /* SwifterDemoiOS.app */,
+				D5DCE8911CC184E80056C427 /* SwifteriOS.framework */,
+				D5DCE8931CC184E80056C427 /* SwifterMac.framework */,
+				D5DCE8951CC184E80056C427 /* SwifterDemoMac.app */,
+				D5DCE8971CC184E80056C427 /* SwifterDemoMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5E6AFCB1CC2BC15006FDCD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5E6AFCF1CC2BC15006FDCD0 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,13 +270,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5DCE86B1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-Assignment" */;
 			buildPhases = (
+				C11507643A8464F5FC4CE79C /* Check Pods Manifest.lock */,
 				D5DCE8451CC183600056C427 /* Sources */,
 				D5DCE8461CC183600056C427 /* Frameworks */,
 				D5DCE8471CC183600056C427 /* Resources */,
+				D5DCE8A31CC185890056C427 /* Embed Frameworks */,
+				639D6A1E1CEAB0B88EE479ED /* Embed Pods Frameworks */,
+				7A5C494CE7B6FE7CAC6E0EBA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5DCE8A21CC185880056C427 /* PBXTargetDependency */,
+				D5E6AFD31CC2BC22006FDCD0 /* PBXTargetDependency */,
 			);
 			name = "Limetray-Assignment";
 			productName = "Limetray-Assignment";
@@ -159,11 +313,13 @@
 		D5DCE8411CC183600056C427 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Prabal Malhan";
 				TargetAttributes = {
 					D5DCE8481CC183600056C427 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = VDEMZS8QC2;
 					};
 					D5DCE8601CC183600056C427 = {
 						CreatedOnToolsVersion = 6.4;
@@ -182,6 +338,16 @@
 			mainGroup = D5DCE8401CC183600056C427;
 			productRefGroup = D5DCE84A1CC183600056C427 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D5E6AFCB1CC2BC15006FDCD0 /* Products */;
+					ProjectRef = D5E6AFCA1CC2BC15006FDCD0 /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = D5DCE8871CC184E80056C427 /* Products */;
+					ProjectRef = D5DCE8861CC184E80056C427 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D5DCE8481CC183600056C427 /* Limetray-Assignment */,
@@ -189,6 +355,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D5DCE88F1CC184E80056C427 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = D5DCE88E1CC184E80056C427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5DCE8911CC184E80056C427 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = D5DCE8901CC184E80056C427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5DCE8931CC184E80056C427 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = D5DCE8921CC184E80056C427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5DCE8951CC184E80056C427 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = D5DCE8941CC184E80056C427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5DCE8971CC184E80056C427 /* SwifterDemoMacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterDemoMacTests.xctest;
+			remoteRef = D5DCE8961CC184E80056C427 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5E6AFCF1CC2BC15006FDCD0 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D5E6AFCE1CC2BC15006FDCD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D5DCE8471CC183600056C427 /* Resources */ = {
@@ -210,14 +421,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		639D6A1E1CEAB0B88EE479ED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Limetray-Assignment/Pods-Limetray-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5C494CE7B6FE7CAC6E0EBA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Limetray-Assignment/Pods-Limetray-Assignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11507643A8464F5FC4CE79C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5DCE8451CC183600056C427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5DCE8541CC183600056C427 /* ViewController.swift in Sources */,
+				D5E6AFD51CC2BEE4006FDCD0 /* ChartsViewController.swift in Sources */,
+				D5E6AFBA1CC2B2BA006FDCD0 /* TweetCell.swift in Sources */,
+				D5EEBFAF1CC2334D00545D94 /* tweet.swift in Sources */,
 				D5DCE8521CC183600056C427 /* Limetray_Assignment.xcdatamodeld in Sources */,
 				D5DCE84F1CC183600056C427 /* AppDelegate.swift in Sources */,
+				D5E7E10C1CC2D6B500849802 /* LimeTrayTweets.swift in Sources */,
+				D5EEBFA71CC232D500545D94 /* TwitterServiceWrapper.swift in Sources */,
+				D5EEBFAD1CC232E000545D94 /* TwitterFollower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E7E10D1CC2D6B500849802 /* LimeTrayTweets.swift in Sources */,
 				D5DCE8681CC183600056C427 /* Limetray_AssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +502,16 @@
 			isa = PBXTargetDependency;
 			target = D5DCE8481CC183600056C427 /* Limetray-Assignment */;
 			targetProxy = D5DCE8621CC183600056C427 /* PBXContainerItemProxy */;
+		};
+		D5DCE8A21CC185880056C427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = D5DCE8A11CC185880056C427 /* PBXContainerItemProxy */;
+		};
+		D5E6AFD31CC2BC22006FDCD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = D5E6AFD21CC2BC22006FDCD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -344,21 +620,37 @@
 		};
 		D5DCE86C1CC183600056C427 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289A4C4BFA91B4DC2103AED3 /* Pods-Limetray-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/prabalmalhan/Downloads/Charts-2.1.2/Charts/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Limetray-Assignment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		D5DCE86D1CC183600056C427 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582C47927B4138AD8044480F /* Pods-Limetray-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/prabalmalhan/Downloads/Charts-2.1.2/Charts/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Limetray-Assignment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -415,6 +707,7 @@
 				D5DCE86D1CC183600056C427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5DCE86E1CC183600056C427 /* Build configuration list for PBXNativeTarget "Limetray-AssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +716,7 @@
 				D5DCE8701CC183600056C427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
