@@ -24,8 +24,12 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         serviceWrapper.delegate = self
         reloadData()
+        var refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: Selector("refreshControlMethod"), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl = refreshControl
     }
     
     //MARK: TableView Data Source and Delegate Methods
@@ -53,10 +57,14 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
         }
         return 70
     }
-    
-//MARK : CoreData Fetch Request
+
+    func refreshControlMethod(){
+        check = true
+        reloadData()
+    }
+//MARK: CoreData Fetch Request
    func reloadData(){
-    
+    self.refreshControl?.beginRefreshing()
     let fetchRequest = NSFetchRequest(entityName: "LimeTrayTweets")
     
     
@@ -87,6 +95,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
         }
         
     }
+    refreshControl?.endRefreshing()
 
     }
     // MARK: - TwitterFollowerDelegate methods

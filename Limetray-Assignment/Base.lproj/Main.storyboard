@@ -17,23 +17,46 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-6e-LUz" userLabel="Line Chart View" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="8" width="584" height="459"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-0W-3hV" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="0.0" width="568" height="486"/>
+                                <rect key="frame" x="8" y="0.0" width="584" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Fe9-0W-3hV" secondAttribute="trailing" id="GCS-zi-VNf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fe9-0W-3hV" secondAttribute="trailing" constant="-8" id="GCS-zi-VNf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gsd-6e-LUz" secondAttribute="bottom" constant="20" id="XSS-GM-aTI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gsd-6e-LUz" secondAttribute="trailing" constant="-8" id="aTg-RN-gzF"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Fe9-0W-3hV" secondAttribute="bottom" constant="50" id="hZO-yP-xVp"/>
                             <constraint firstItem="Fe9-0W-3hV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="i8j-bj-ZTy"/>
-                            <constraint firstItem="Fe9-0W-3hV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tyD-aE-K7z"/>
+                            <constraint firstItem="gsd-6e-LUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nkl-m2-HGm"/>
+                            <constraint firstItem="gsd-6e-LUz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="r9Z-m6-7ls"/>
+                            <constraint firstItem="Fe9-0W-3hV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="tyD-aE-K7z"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="Graph" id="VgV-uu-PCJ"/>
+                    <navigationItem key="navigationItem" title="Graph" id="VgV-uu-PCJ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xE0-dD-m3S">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q7G-Sv-D8o">
+                                <rect key="frame" x="544" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.92941176469999998" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mX9-Wr-Mlz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="barChart" destination="Fe9-0W-3hV" id="FHQ-NP-6Cn"/>
+                        <outlet property="lineChart" destination="gsd-6e-LUz" id="1Zn-ZQ-ATz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,7 +138,9 @@
         <scene sceneID="bcJ-aW-AOu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e1L-9i-ine" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Latest Tweets" image="twitter" id="HbI-ny-wea"/>
+                    <tabBarItem key="tabBarItem" title="Latest Tweets" image="1460909336_Socialmedia_icons_Twitter-07" id="HbI-ny-wea">
+                        <inset key="imageInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hB-C4-IWO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -180,8 +205,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1460909336_Socialmedia_icons_Twitter-07" width="32" height="32"/>
         <image name="Calender" width="63" height="64"/>
         <image name="graph" width="32" height="32"/>
-        <image name="twitter" width="32" height="32"/>
     </resources>
 </document>
