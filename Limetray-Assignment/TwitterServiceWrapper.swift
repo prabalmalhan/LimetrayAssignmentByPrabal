@@ -111,7 +111,7 @@ public class TwitterServiceWrapper:NSObject {
                 for status in statuses{
                   
                     if let tweet = status["text"] as? String{
-
+                       
                         if let date = status["created_at"] as? String{
                             
                             if let id  = status["id_str"] as? String{

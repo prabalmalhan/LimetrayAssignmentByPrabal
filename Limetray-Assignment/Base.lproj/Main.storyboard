@@ -40,11 +40,11 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Graph" id="VgV-uu-PCJ">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="xE0-dD-m3S">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q7G-Sv-D8o">
-                                <rect key="frame" x="544" y="7" width="50" height="30"/>
+                        <barButtonItem key="rightBarButtonItem" image="1460914507_interface-54" style="plain" id="xE0-dD-m3S">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q7G-Sv-D8o">
+                                <rect key="frame" x="499" y="6" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Toggle">
+                                <state key="normal" image="1460914728_interface-54">
                                     <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.92941176469999998" green="0.0" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -77,41 +77,42 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6TX-HY-L7d" id="hSm-wg-YE1">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwW-0c-gXz">
-                                            <rect key="frame" x="56" y="8" width="536" height="104"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqH-de-E69">
+                                            <rect key="frame" x="56" y="8" width="528" height="96"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                                        </textView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calender" translatesAutoresizingMaskIntoConstraints="NO" id="gKZ-OP-sCq">
-                                            <rect key="frame" x="8" y="13" width="40" height="50"/>
+                                            <rect key="frame" x="8" y="8" width="40" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="DkT-Xp-STD"/>
                                                 <constraint firstAttribute="height" constant="50" id="zPg-eQ-rho"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxU-HX-HgQ">
-                                            <rect key="frame" x="2" y="13" width="40" height="17"/>
+                                            <rect key="frame" x="2" y="8" width="40" height="17"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYU-nZ-G1e">
-                                            <rect key="frame" x="17" y="34" width="40" height="21"/>
+                                            <rect key="frame" x="17" y="29" width="40" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vwW-0c-gXz" firstAttribute="top" secondItem="hSm-wg-YE1" secondAttribute="top" constant="8" id="0cD-jb-bcX"/>
                                         <constraint firstItem="gKZ-OP-sCq" firstAttribute="width" secondItem="BxU-HX-HgQ" secondAttribute="width" id="3z6-lU-BMk"/>
-                                        <constraint firstItem="gKZ-OP-sCq" firstAttribute="top" secondItem="vwW-0c-gXz" secondAttribute="top" constant="5" id="9GL-Hf-pIt"/>
-                                        <constraint firstAttribute="trailing" secondItem="vwW-0c-gXz" secondAttribute="trailing" constant="8" id="BDT-V5-th2"/>
-                                        <constraint firstItem="vwW-0c-gXz" firstAttribute="leading" secondItem="gKZ-OP-sCq" secondAttribute="trailing" constant="8" id="Cyc-ax-IVa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uqH-de-E69" secondAttribute="bottom" constant="8" id="5co-N5-yaT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uqH-de-E69" secondAttribute="trailing" constant="8" id="Dl8-Vi-Ef0"/>
+                                        <constraint firstItem="uqH-de-E69" firstAttribute="top" secondItem="gKZ-OP-sCq" secondAttribute="top" id="EeX-u1-LLa"/>
                                         <constraint firstItem="gKZ-OP-sCq" firstAttribute="leading" secondItem="hSm-wg-YE1" secondAttribute="leadingMargin" id="SCZ-c6-xGa"/>
                                         <constraint firstItem="aYU-nZ-G1e" firstAttribute="centerX" secondItem="gKZ-OP-sCq" secondAttribute="centerX" constant="9" id="SXw-GC-i4D"/>
                                         <constraint firstItem="aYU-nZ-G1e" firstAttribute="bottom" secondItem="gKZ-OP-sCq" secondAttribute="bottom" constant="-8" id="Xlx-pk-JKV"/>
-                                        <constraint firstAttribute="bottom" secondItem="vwW-0c-gXz" secondAttribute="bottom" constant="8" id="eQO-lG-I5Y"/>
+                                        <constraint firstItem="uqH-de-E69" firstAttribute="top" secondItem="hSm-wg-YE1" secondAttribute="topMargin" id="cDO-Qh-Fr3"/>
+                                        <constraint firstItem="uqH-de-E69" firstAttribute="leading" secondItem="gKZ-OP-sCq" secondAttribute="trailing" constant="8" id="hDe-9e-81B"/>
                                         <constraint firstItem="aYU-nZ-G1e" firstAttribute="width" secondItem="gKZ-OP-sCq" secondAttribute="width" id="ifE-V3-kni"/>
                                         <constraint firstItem="gKZ-OP-sCq" firstAttribute="centerX" secondItem="BxU-HX-HgQ" secondAttribute="centerX" constant="6" id="rAW-FJ-dhI"/>
                                         <constraint firstItem="gKZ-OP-sCq" firstAttribute="top" secondItem="BxU-HX-HgQ" secondAttribute="top" id="scj-jT-6na"/>
@@ -119,7 +120,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="tweetDate" destination="aYU-nZ-G1e" id="eUN-Oq-hKE"/>
-                                    <outlet property="tweet_text" destination="vwW-0c-gXz" id="47U-SP-hns"/>
+                                    <outlet property="tweet_textView" destination="uqH-de-E69" id="jNi-kj-dv4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -128,7 +129,13 @@
                             <outlet property="delegate" destination="EzL-Qc-81B" id="wd2-9h-e0y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Limetray" id="JkK-tx-V9g"/>
+                    <navigationItem key="navigationItem" title="Limetray" id="JkK-tx-V9g">
+                        <barButtonItem key="rightBarButtonItem" image="1460914703_Info" id="gy0-Ba-8r5">
+                            <connections>
+                                <action selector="alert:" destination="EzL-Qc-81B" id="rlb-Kc-ytR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVR-WE-OnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +213,9 @@
     </scenes>
     <resources>
         <image name="1460909336_Socialmedia_icons_Twitter-07" width="32" height="32"/>
+        <image name="1460914507_interface-54" width="32" height="32"/>
+        <image name="1460914703_Info" width="24" height="24"/>
+        <image name="1460914728_interface-54" width="24" height="24"/>
         <image name="Calender" width="63" height="64"/>
         <image name="graph" width="32" height="32"/>
     </resources>
