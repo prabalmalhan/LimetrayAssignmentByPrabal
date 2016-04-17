@@ -2,7 +2,7 @@
 //  TwitterServiceWrapper.swift
 //  Limetray-Assisgnment
 //
-//  Created by Ravi Shankar on 15/04/16.
+//  Created by Prabal Malhan on 15/04/16.
 //  Copyright (c) 2016 Prabal Malhan. All rights reserved.
 //
 
@@ -15,10 +15,6 @@ protocol TwitterFollowerDelegate{
 
 
 public class TwitterServiceWrapper:NSObject {
-    
-    
-    
-//    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var delegate:TwitterFollowerDelegate?
     
     let consumerKey = "Bar7t02CdVcbvOmY0lTf4uWNk"
@@ -93,7 +89,6 @@ public class TwitterServiceWrapper:NSObject {
             
             
             NSURLSession.sharedSession() .dataTaskWithRequest(request, completionHandler: { (data: NSData?, response:NSURLResponse?, error: NSError?) -> Void in
-//                 println("Access Token  + \(data)  \n response \(response)")
                 self.processResult(data!, response: response!, error: error)
                
                 
@@ -115,28 +110,20 @@ public class TwitterServiceWrapper:NSObject {
                 
                 for status in statuses{
                   
-                   
                     if let tweet = status["text"] as? String{
-//                        println(tweet)
-                        
-                        
+
                         if let date = status["created_at"] as? String{
                             
                             if let id  = status["id_str"] as? String{
                                 
-                                var shortDate = (date as? NSString)!.substringWithRange(NSMakeRange(8, 2))//"llo, playgroun"
-                                println("short Date " + shortDate)
+                                var shortDate = (date as NSString).substringWithRange(NSMakeRange(8, 2))
                                 let follower = TwitterFollower(text: tweet,date:shortDate,id:id)
                                 self.delegate?.finishedDownloading(follower)
                             }
                         }
                     }
                 }
-                println("Second fetch")
-//                lastSinceId = (statuses[0]["id_str"] as? String)!
-                println(lastSinceId)
-            
-                
+
             }
 
         else {

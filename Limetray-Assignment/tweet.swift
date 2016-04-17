@@ -13,19 +13,22 @@ import CoreData
 var lastSinceId = ""
 var check = true
 class tweet: UITableViewController,TwitterFollowerDelegate {
-
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     var serviceWrapper: TwitterServiceWrapper = TwitterServiceWrapper()
     var heightDictionaryForTweet = [Int:CGFloat]()
-//    var tweets = [TwitterFollower]()
     var tweetsFromCoreData = [TwitterFollower]()
+    
+    //MARK: LifeCycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         serviceWrapper.delegate = self
         reloadData()
     }
+    
+    //MARK: TableView Data Source and Delegate Methods
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -51,31 +54,23 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
         return 70
     }
     
+//MARK : CoreData Fetch Request
    func reloadData(){
-     // Create a new fetch request using the LogItem entity
+    
     let fetchRequest = NSFetchRequest(entityName: "LimeTrayTweets")
     
-    // Execute the fetch request, and cast the results to an array of LogItem objects
+    
     if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [LimeTrayTweets] {
         
         if fetchResults.count != 0{
             
-            println("Fetch Results COunt \(fetchResults.count)")
             for results in fetchResults{
-               
-                    
-                
-               let alreadyFound = tweetsFromCoreData.filter( { return $0.id == results.id })
+                let alreadyFound = tweetsFromCoreData.filter( { return $0.id == results.id })
                 if alreadyFound.count == 0 {
                     tweetsFromCoreData.append(TwitterFollower(text: results.text, date: results.date, id: results.id))
                 }
-                println("Fetch Results  ")
-                println(results.date + results.id)
-             
                 
                 lastSinceId = "\(fetchResults[0].id.toInt()!+1)"
-                
-                
             }
       
             if (check){
@@ -89,10 +84,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
             serviceWrapper.getResponseForRequest("https://api.twitter.com/1.1/search/tweets.json?f=tweets&vertical=default&q=%22limetray%22&count=800&src=typd")
             check = false
             
- 
-            
         }
-        
         
     }
 
@@ -100,13 +92,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
     // MARK: - TwitterFollowerDelegate methods
     
     func finishedDownloading(follower: TwitterFollower) {
-//        createTask(follower)
-        
-        
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            
-            
-//            self.tweets.append(follower)
+     dispatch_async(dispatch_get_main_queue(), { () -> Void in   
             self.createTask(follower)
             self.tableView.reloadData()
             self.reloadData()
@@ -115,6 +101,7 @@ class tweet: UITableViewController,TwitterFollowerDelegate {
         })
         
     }
+//MARK:- CoreData Save Entity
     func createTask(tweetData:TwitterFollower) {
        
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("LimeTrayTweets", inManagedObjectContext: self.managedObjectContext!) as! LimeTrayTweets
