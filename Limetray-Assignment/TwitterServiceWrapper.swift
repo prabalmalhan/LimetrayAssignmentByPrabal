@@ -17,8 +17,8 @@ protocol TweetsDelegate{
 public class TwitterServiceWrapper:NSObject {
     var delegate:TweetsDelegate?
     
-    let consumerKey = "Bar7t02CdVcbvOmY0lTf4uWNk"
-    let consumerSecret = "hN5Gukkaq0PQbMLooIo4A47tpMdsGGHRsePoX4EjoPlUjK4ntd"
+    let consumerKey = "Enter Your consumer Key"
+    let consumerSecret = "Enter your consumer Secret"
     let host = "api.twitter.com"
     
     // MARK:- Bearer Token
