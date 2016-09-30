@@ -1,12 +1,8 @@
 # LimetrayAssignmentByPrabal
-This is the demo project which find the tweets have the word 'limetray' using the Twitter Search API and then plots a Graph.
+This is a demo project which find the tweets have the word 'limetray' using the Twitter Search API and then plot it on a Graph.
 
 
-BAD STUFF{Murphy's Law}
-
-
-
-Build using Swift 1.2 and Xcode 6.4 (tried to download Xcode 7.3 with MTNL Net but failed everytime)
+Build using Swift 1.2 and Xcode 6.4
 
 FEATURES 
 
